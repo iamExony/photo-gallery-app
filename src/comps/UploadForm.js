@@ -21,7 +21,7 @@ const UploadForm = () => {
         }
     }
   return (
-    <form>
+    <form> 
       <div className='center'>
       <label>
         <input type='file' onChange={changeHandler} className=''/>

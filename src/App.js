@@ -4,13 +4,16 @@ import UploadForm from './comps/UploadForm';
 import Grid from './comps/grid';
 import Modal from './comps/Modal';
 
+
+
 function App({}) {
 const [selectedImg, setSelectedImg] = useState(null);
 
   return (
     <div className="App">
       <Title/>
-      <UploadForm />
+    
+    <UploadForm />
       < Grid setSelectedImg={setSelectedImg} />
       {selectedImg &&  <Modal selectedImg={selectedImg} setSelectedImg = {setSelectedImg}/>}
     </div>
